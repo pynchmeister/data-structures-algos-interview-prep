@@ -31,7 +31,7 @@ class Graph {
     this.nodes.push(node)
   }
   
-  breadthFirstTraversal(start) {
+  breadthFirstTraversal(start, end) {
     const queue = [start]
     const visitedNodes = new Set()
     visitedNodes.add(start)
@@ -40,6 +40,7 @@ class Graph {
       // pull node queue (to visit)
       // add its adjacencies to the queue
       const node = queue.shift()
+      if (node.value === end.value)
       for (const adjacency of nodes.edgesList) {
         if (!visitedNodes.has(adjacency)) {
           queue.push(adjacency)
@@ -75,4 +76,4 @@ MIA.connect(MCO)
 MCO.connect(PBI)
 MIA.connect(PBI)
 
-graph.breathFirstTraversal(DFW)
+graph.breathFirstTraversal(DFW, MIA)
