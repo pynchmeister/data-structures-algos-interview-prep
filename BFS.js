@@ -31,6 +31,25 @@ class Graph {
   addToGraph(node) {
     this.nodes.push(node)
   }
+  
+  breadthFirstTraversal(start) {
+    const queue = [start]
+    const visitedNodes = new Set()
+    visitedNodes.add(start)
+    
+    while (queue.length > 0) {
+      // pull node queue (to visit)
+      // add its adjacencies to the queue
+      const node = queue.shift()
+      for (const adjacency of nodes.edgesList) {
+        if (!visitedNodes.has(adjacency)) {
+          queue.push(adjacency)
+          visitedNodes.add(adjacency)
+        } 
+      }
+     console.log(node.value)
+    }
+  }
 }
 
 const DFW = new Node('DFW')
