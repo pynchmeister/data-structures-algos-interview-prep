@@ -39,11 +39,11 @@ const depthFirstPrint = (root) => {
     const curr = stack.pop();
     console.log(curr.val);
     // add curr's children to the top of the stack
-    if (curr.left !== null) {
-      stack.push(curr.left);
-    }
     if (curr.right !== null) {
     stack.push(curr.right);
+    }
+    if (curr.left !== null) {
+      stack.push(curr.left);
     }
     // DFS is considered visited when it leaves the stack  
   }
