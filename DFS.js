@@ -29,3 +29,24 @@ c.right = f;
 //       b     c
 //      / \     \
 //     d   e     f
+
+
+const depthFirstPrint = (root) => {
+  const stack = [ root ];
+  // start the algorithm
+  while (stack.length > 0) {
+    // get rid of top of the stack 
+    const curr = stack.pop();
+    console.log(curr.val);
+    // add curr's children to the top of the stack
+    if (curr.left !== null) {
+      stack.push(curr.left);
+    }
+    if (curr.right !== null) {
+    stack.push(curr.right);
+    }
+    // DFS is considered visited when it leaves the stack  
+  }
+};
+
+depthFirstPrint(a);
