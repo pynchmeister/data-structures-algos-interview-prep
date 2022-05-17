@@ -32,3 +32,13 @@ Optional:
   - Adjacency Matrix 
   
 <img width="479" alt="Screen Shot 2022-05-17 at 11 56 07 AM" src="https://user-images.githubusercontent.com/33232379/168855533-f3e6f037-5d03-497e-ba19-2b27e57cbcf6.png">
+
+### Graph - Complexity(Adjacency list)
+
+Add node: O(1)
+
+Add edge: O(1)
+
+Remove node: O(N + E)
+
+Remove edge: O(E)
