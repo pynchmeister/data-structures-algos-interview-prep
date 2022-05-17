@@ -1,6 +1,7 @@
 // Graph traversal using Breadth-first-search
 // @info BFS traverses broadly into the data structure by visiting neighbor nodes before children nodes
 // Uses a queue data structure
+// @info Breadth First Search has a time complexity of O(v + e) where v is the number of vertices and e is the number of edges
 
 class Node {
   constructor(value) {
