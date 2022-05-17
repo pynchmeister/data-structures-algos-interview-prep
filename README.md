@@ -9,6 +9,22 @@
 
 ![image](https://user-images.githubusercontent.com/33232379/168855342-57f934da-edc7-49c9-8323-df81b79ee356.jpeg)
 
+### Graph Operations
+
+Standard:
+
+* addNode
+* removeNode
+* addEdge
+* removeEdge
+* Contains
+
+Optional:
+
+* isEmpty
+* size
+* merge
+
 ### Graph traversal
 
 * BFS v DFS
