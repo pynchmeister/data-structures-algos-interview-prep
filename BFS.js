@@ -1,5 +1,4 @@
 // Graph traversal using Breadth-first-search
-// @dev uses adjacency graph
 // @info BFS traverses broadly into the data structure by visiting neighbor nodes before children nodes
 // Uses a queue data structure
 
@@ -77,9 +76,3 @@ MCO.connect(PBI)
 MIA.connect(PBI)
 
 graph.breathFirstTraversal(DFW)
-
-
-
-     
-
-
